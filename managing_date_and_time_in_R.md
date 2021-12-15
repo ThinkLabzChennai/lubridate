@@ -7,7 +7,7 @@ output:
   html_document:
     keep_md: true
     toc: yes
-    df_print: paged
+    df_print: kable
 
 ---
 
@@ -63,11 +63,11 @@ data("flights")
 
 Let us look at first five rows of the data
 
-<div data-pagedtable="false">
-  <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["year"],"name":[1],"type":["int"],"align":["right"]},{"label":["month"],"name":[2],"type":["int"],"align":["right"]},{"label":["day"],"name":[3],"type":["int"],"align":["right"]},{"label":["dep_time"],"name":[4],"type":["int"],"align":["right"]},{"label":["sched_dep_time"],"name":[5],"type":["int"],"align":["right"]},{"label":["dep_delay"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["arr_time"],"name":[7],"type":["int"],"align":["right"]},{"label":["sched_arr_time"],"name":[8],"type":["int"],"align":["right"]},{"label":["arr_delay"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["carrier"],"name":[10],"type":["chr"],"align":["left"]},{"label":["flight"],"name":[11],"type":["int"],"align":["right"]},{"label":["tailnum"],"name":[12],"type":["chr"],"align":["left"]},{"label":["origin"],"name":[13],"type":["chr"],"align":["left"]},{"label":["dest"],"name":[14],"type":["chr"],"align":["left"]},{"label":["air_time"],"name":[15],"type":["dbl"],"align":["right"]},{"label":["distance"],"name":[16],"type":["dbl"],"align":["right"]},{"label":["hour"],"name":[17],"type":["dbl"],"align":["right"]},{"label":["minute"],"name":[18],"type":["dbl"],"align":["right"]},{"label":["time_hour"],"name":[19],"type":["dttm"],"align":["right"]}],"data":[{"1":"2013","2":"1","3":"1","4":"517","5":"515","6":"2","7":"830","8":"819","9":"11","10":"UA","11":"1545","12":"N14228","13":"EWR","14":"IAH","15":"227","16":"1400","17":"5","18":"15","19":"2013-01-01 05:00:00"},{"1":"2013","2":"1","3":"1","4":"533","5":"529","6":"4","7":"850","8":"830","9":"20","10":"UA","11":"1714","12":"N24211","13":"LGA","14":"IAH","15":"227","16":"1416","17":"5","18":"29","19":"2013-01-01 05:00:00"},{"1":"2013","2":"1","3":"1","4":"542","5":"540","6":"2","7":"923","8":"850","9":"33","10":"AA","11":"1141","12":"N619AA","13":"JFK","14":"MIA","15":"160","16":"1089","17":"5","18":"40","19":"2013-01-01 05:00:00"},{"1":"2013","2":"1","3":"1","4":"544","5":"545","6":"-1","7":"1004","8":"1022","9":"-18","10":"B6","11":"725","12":"N804JB","13":"JFK","14":"BQN","15":"183","16":"1576","17":"5","18":"45","19":"2013-01-01 05:00:00"},{"1":"2013","2":"1","3":"1","4":"554","5":"600","6":"-6","7":"812","8":"837","9":"-25","10":"DL","11":"461","12":"N668DN","13":"LGA","14":"ATL","15":"116","16":"762","17":"6","18":"0","19":"2013-01-01 06:00:00"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
+
+```{=html}
+<div id="htmlwidget-1da3fd61f3d5a0c96981" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1da3fd61f3d5a0c96981">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],[2013,2013,2013,2013,2013],[1,1,1,1,1],[1,1,1,1,1],[517,533,542,544,554],[515,529,540,545,600],[2,4,2,-1,-6],[830,850,923,1004,812],[819,830,850,1022,837],[11,20,33,-18,-25],["UA","UA","AA","B6","DL"],[1545,1714,1141,725,461],["N14228","N24211","N619AA","N804JB","N668DN"],["EWR","LGA","JFK","JFK","LGA"],["IAH","IAH","MIA","BQN","ATL"],[227,227,160,183,116],[1400,1416,1089,1576,762],[5,5,5,5,6],[15,29,40,45,0],["2013-01-01T10:00:00Z","2013-01-01T10:00:00Z","2013-01-01T10:00:00Z","2013-01-01T10:00:00Z","2013-01-01T11:00:00Z"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>year<\/th>\n      <th>month<\/th>\n      <th>day<\/th>\n      <th>dep_time<\/th>\n      <th>sched_dep_time<\/th>\n      <th>dep_delay<\/th>\n      <th>arr_time<\/th>\n      <th>sched_arr_time<\/th>\n      <th>arr_delay<\/th>\n      <th>carrier<\/th>\n      <th>flight<\/th>\n      <th>tailnum<\/th>\n      <th>origin<\/th>\n      <th>dest<\/th>\n      <th>air_time<\/th>\n      <th>distance<\/th>\n      <th>hour<\/th>\n      <th>minute<\/th>\n      <th>time_hour<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,11,15,16,17,18]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+```
 
 The following table gives an introduction about variables in the data and their type   
 
@@ -201,7 +201,7 @@ now()
 ```
 
 ```
-## [1] "2021-12-15 16:58:25 IST"
+## [1] "2021-12-15 17:12:54 IST"
 ```
 
 
@@ -352,10 +352,71 @@ col=dt,sep="-",remove = F)
 head(data2)
 ```
 
-<div data-pagedtable="false">
-  <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["dt"],"name":[1],"type":["chr"],"align":["left"]},{"label":["day"],"name":[2],"type":["int"],"align":["right"]},{"label":["month"],"name":[3],"type":["int"],"align":["right"]},{"label":["year"],"name":[4],"type":["int"],"align":["right"]},{"label":["hour"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["minute"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"1-1-2013-5-15","2":"1","3":"1","4":"2013","5":"5","6":"15"},{"1":"1-1-2013-5-29","2":"1","3":"1","4":"2013","5":"5","6":"29"},{"1":"1-1-2013-5-40","2":"1","3":"1","4":"2013","5":"5","6":"40"},{"1":"1-1-2013-5-45","2":"1","3":"1","4":"2013","5":"5","6":"45"},{"1":"1-1-2013-6-0","2":"1","3":"1","4":"2013","5":"6","6":"0"},{"1":"1-1-2013-5-58","2":"1","3":"1","4":"2013","5":"5","6":"58"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
+<div class="kable-table">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> dt </th>
+   <th style="text-align:right;"> day </th>
+   <th style="text-align:right;"> month </th>
+   <th style="text-align:right;"> year </th>
+   <th style="text-align:right;"> hour </th>
+   <th style="text-align:right;"> minute </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1-1-2013-5-15 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 15 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1-1-2013-5-29 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 29 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1-1-2013-5-40 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 40 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1-1-2013-5-45 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 45 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1-1-2013-6-0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1-1-2013-5-58 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 58 </td>
+  </tr>
+</tbody>
+</table>
+
 </div>
 
 The function **`dmy_hm()`** is used to convert string or numeric object in to date time(POSIXct) object. we can specify the timezone using **`tz`** argument **Please note that the timezone availability differs system to system**
