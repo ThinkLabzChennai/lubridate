@@ -63,11 +63,138 @@ data("flights")
 
 Let us look at first five rows of the data
 
-
-```{=html}
-<div id="htmlwidget-1da3fd61f3d5a0c96981" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1da3fd61f3d5a0c96981">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],[2013,2013,2013,2013,2013],[1,1,1,1,1],[1,1,1,1,1],[517,533,542,544,554],[515,529,540,545,600],[2,4,2,-1,-6],[830,850,923,1004,812],[819,830,850,1022,837],[11,20,33,-18,-25],["UA","UA","AA","B6","DL"],[1545,1714,1141,725,461],["N14228","N24211","N619AA","N804JB","N668DN"],["EWR","LGA","JFK","JFK","LGA"],["IAH","IAH","MIA","BQN","ATL"],[227,227,160,183,116],[1400,1416,1089,1576,762],[5,5,5,5,6],[15,29,40,45,0],["2013-01-01T10:00:00Z","2013-01-01T10:00:00Z","2013-01-01T10:00:00Z","2013-01-01T10:00:00Z","2013-01-01T11:00:00Z"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>year<\/th>\n      <th>month<\/th>\n      <th>day<\/th>\n      <th>dep_time<\/th>\n      <th>sched_dep_time<\/th>\n      <th>dep_delay<\/th>\n      <th>arr_time<\/th>\n      <th>sched_arr_time<\/th>\n      <th>arr_delay<\/th>\n      <th>carrier<\/th>\n      <th>flight<\/th>\n      <th>tailnum<\/th>\n      <th>origin<\/th>\n      <th>dest<\/th>\n      <th>air_time<\/th>\n      <th>distance<\/th>\n      <th>hour<\/th>\n      <th>minute<\/th>\n      <th>time_hour<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,11,15,16,17,18]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
-```
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> year </th>
+   <th style="text-align:right;"> month </th>
+   <th style="text-align:right;"> day </th>
+   <th style="text-align:right;"> dep_time </th>
+   <th style="text-align:right;"> sched_dep_time </th>
+   <th style="text-align:right;"> dep_delay </th>
+   <th style="text-align:right;"> arr_time </th>
+   <th style="text-align:right;"> sched_arr_time </th>
+   <th style="text-align:right;"> arr_delay </th>
+   <th style="text-align:left;"> carrier </th>
+   <th style="text-align:right;"> flight </th>
+   <th style="text-align:left;"> tailnum </th>
+   <th style="text-align:left;"> origin </th>
+   <th style="text-align:left;"> dest </th>
+   <th style="text-align:right;"> air_time </th>
+   <th style="text-align:right;"> distance </th>
+   <th style="text-align:right;"> hour </th>
+   <th style="text-align:right;"> minute </th>
+   <th style="text-align:left;"> time_hour </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 517 </td>
+   <td style="text-align:right;"> 515 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 830 </td>
+   <td style="text-align:right;"> 819 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:left;"> UA </td>
+   <td style="text-align:right;"> 1545 </td>
+   <td style="text-align:left;"> N14228 </td>
+   <td style="text-align:left;"> EWR </td>
+   <td style="text-align:left;"> IAH </td>
+   <td style="text-align:right;"> 227 </td>
+   <td style="text-align:right;"> 1400 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:left;"> 2013-01-01 05:00:00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 533 </td>
+   <td style="text-align:right;"> 529 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 850 </td>
+   <td style="text-align:right;"> 830 </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:left;"> UA </td>
+   <td style="text-align:right;"> 1714 </td>
+   <td style="text-align:left;"> N24211 </td>
+   <td style="text-align:left;"> LGA </td>
+   <td style="text-align:left;"> IAH </td>
+   <td style="text-align:right;"> 227 </td>
+   <td style="text-align:right;"> 1416 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 2013-01-01 05:00:00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 542 </td>
+   <td style="text-align:right;"> 540 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 923 </td>
+   <td style="text-align:right;"> 850 </td>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> AA </td>
+   <td style="text-align:right;"> 1141 </td>
+   <td style="text-align:left;"> N619AA </td>
+   <td style="text-align:left;"> JFK </td>
+   <td style="text-align:left;"> MIA </td>
+   <td style="text-align:right;"> 160 </td>
+   <td style="text-align:right;"> 1089 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 40 </td>
+   <td style="text-align:left;"> 2013-01-01 05:00:00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 544 </td>
+   <td style="text-align:right;"> 545 </td>
+   <td style="text-align:right;"> -1 </td>
+   <td style="text-align:right;"> 1004 </td>
+   <td style="text-align:right;"> 1022 </td>
+   <td style="text-align:right;"> -18 </td>
+   <td style="text-align:left;"> B6 </td>
+   <td style="text-align:right;"> 725 </td>
+   <td style="text-align:left;"> N804JB </td>
+   <td style="text-align:left;"> JFK </td>
+   <td style="text-align:left;"> BQN </td>
+   <td style="text-align:right;"> 183 </td>
+   <td style="text-align:right;"> 1576 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 45 </td>
+   <td style="text-align:left;"> 2013-01-01 05:00:00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 554 </td>
+   <td style="text-align:right;"> 600 </td>
+   <td style="text-align:right;"> -6 </td>
+   <td style="text-align:right;"> 812 </td>
+   <td style="text-align:right;"> 837 </td>
+   <td style="text-align:right;"> -25 </td>
+   <td style="text-align:left;"> DL </td>
+   <td style="text-align:right;"> 461 </td>
+   <td style="text-align:left;"> N668DN </td>
+   <td style="text-align:left;"> LGA </td>
+   <td style="text-align:left;"> ATL </td>
+   <td style="text-align:right;"> 116 </td>
+   <td style="text-align:right;"> 762 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;"> 2013-01-01 06:00:00 </td>
+  </tr>
+</tbody>
+</table>
 
 The following table gives an introduction about variables in the data and their type   
 
@@ -201,7 +328,7 @@ now()
 ```
 
 ```
-## [1] "2021-12-15 17:12:54 IST"
+## [1] "2021-12-15 17:21:43 IST"
 ```
 
 
